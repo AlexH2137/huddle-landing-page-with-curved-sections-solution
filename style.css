@@ -1,0 +1,315 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+h1, h2 {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+}
+
+header a {
+	border: 1px solid #fc6cb6;
+	border-radius: 40px;
+	width: 125px;
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+	color: #fc6cb6;
+}
+
+header a:hover {
+	border: 1px solid #E8a0c8;
+	color: #E8a0c8;
+}
+
+.intro {
+	padding: 70px 130px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.intro-text {
+	padding: 20px 0;
+	width: 80%;
+}
+
+.get-started {
+	background-color: #fd53c0;
+	width: 250px;
+	height: 60px;
+	border-radius: 50px;
+	box-shadow: 5px 5px 8px #d4dcda;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.get-started a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.get-started:hover {
+	background-color: #ff8ed6;
+	cursor: pointer;
+}
+
+.mockups {
+	width: 100%;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+	margin-top: 50px;
+}
+
+.stats h1 {
+	font-size: 50px;
+}
+
+.stats-imgs {
+	text-align: left;
+}
+
+.stats img {
+	width: 40px;
+}
+
+.stats p {
+	color: #90939c;
+}
+
+.services {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px;
+	width: 100vw;
+}
+	
+.services h2 {
+	padding: 20px 0;
+}
+
+.service-text {
+	width: 45%;
+	padding: 20px;
+}
+
+.service-imgs {
+	width: 40%;
+	padding: 20px;
+}
+
+.service-1, .service-3 {
+	background-color: #f6fbff;
+}
+
+.bg-top, .bg-footer {
+	margin-bottom: -5px;
+	width: 100vw;
+}
+
+.bg-bottom {
+	width: 100vw;
+}
+
+.build-container {
+	display: flex;
+	justify-content: center;
+}
+
+.build {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 0;
+}
+
+.build h2 {
+	padding-bottom: 20px;
+}
+
+footer {
+	background-color: #01262f;
+	display: flex;
+	justify-content: space-between;
+	padding: 60px;
+	width: 100vw;
+	color: white;
+}
+
+footer p {
+	padding: 15px 0;
+}
+
+.contact {
+	width: 35%;
+}
+
+.contact-sections {
+	display: flex;
+	align-items: center;
+}
+
+.contact-sections p {
+	padding-left: 15px;
+}
+
+.contact-sections img {
+	width: 25px;
+	height: 25px;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+	min-width: 80px;
+	max-width: 120px;
+	padding-top: 30px;
+	font-size: 26px;
+}
+
+.socials a {
+	color: white;
+}
+
+.socials a:hover {
+	color: #01c7fb;
+}
+
+.news {
+	width: 45%;
+	margin-top: 10px;
+	margin-right: 10%;
+}
+
+.news p {
+	width: 380px;
+	margin-bottom: 20px;
+}
+
+.input {
+	display: flex;
+	justify-content: space-between;
+	min-width: 400px;
+	width: 400px;
+}
+
+.email {
+	height: 35px;
+	width: 250px;
+	border-radius: 5px;
+	border: none;
+}
+
+.subscribe {
+	height: 35px;
+	width: 130px;
+	background-color: #fd53c0;
+	border: none;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.subscribe:hover {
+	background-color:#ff8ed6;
+	cursor: pointer;
+}
+
+
+@media(max-width: 768px) {
+	header {
+		padding: 35px;
+	}
+	
+	header img {
+		width: 175px;
+	}
+	
+	.intro {
+		padding: 70px 60px;
+	}
+	
+	.stats {
+		flex-direction: column;
+		width: 200px;
+		height: 400px;
+	}
+	
+	.stats-imgs {
+		padding-left: 30px;
+	}
+	
+	.services {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.service-1, .service-3 {
+		flex-direction: column-reverse
+	}
+	
+	.service-text, .service-imgs {
+		width: 100%;
+	}
+	
+	.build-container {
+		width: 100%;
+	}
+	
+	.build {
+		width: 60%;
+	}
+	
+	footer {
+		flex-direction: column-reverse;
+		
+	}
+	
+	.input {
+		flex-direction: column;
+		height: 110px;
+		align-items: end;
+	}
+	
+	.email {
+		height: 45px;
+		width: 100%;
+	}
+	
+	.subscribe {
+		height: 45px;
+		width: 150px;
+		font-size: 17px;
+	}
+	
+	.contact {
+		margin-top: 100px;
+		width: 100%;
+	}
+	
+}
